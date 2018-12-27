@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+
+<style type="text/css">
+	
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	body{
+		/*transform: translate(25%);*/
+		padding: 10px;
+	}
+	table{ padding: inherit }
+		input[type="text"], input[type="phone"],
+		input[type="email"],input[type="password"],
+		input[type="code"],input[type="Date"]
+		{
+			width: 93%;
+			background: #f2f2f2;
+			
+		}
+
+	
+	input[type="submit"]{
+		line-height: 25px;
+		border-radius: 25px 0px 25px 0px;
+		font-size: 40px;
+		padding: 20px;
+		background-color: transparent;
+		transform: translate(10%,10%);
+		background-color: #f2f2f7;
+
+	}
+	input{
+		border-radius: 50px;
+		margin: 5px;
+		padding: 5px;
+		
+		display: inline-block;
+	
+	}
+	h1{
+		padding-left: 100px;
+		border: 5px #aaa groove;
+		width: 460px;
+	}
+	
+	table{
+		background: #ccc;
+	}
+	img{
+		position: relative;
+		padding-left: 15%;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="main">
+	<div>
+		<h1>contact form</h1>
+	</div>
+	<table border="2">
+		<tr>
+			<div>
+			<td>enter your name: </td>
+			<td ><input type="name" name="" placeholder="firstname"></td>
+			<td><input type="name" name="" placeholder="lastname"></td>
+			</div>
+		</tr>
+		<tr class="ROW">
+			<td >enter your email address: </td>
+			<td colspan="2"><input type="email" name="" placeholder="example@mail.com"></td>
+					
+		</tr>
+		<tr class="ROW">
+			<td>
+				enter your valid CNIC
+			</td>
+			<td colspan="2">
+				<input type="password" name="" placeholder="43568908689773563">
+			</td>
+		</tr>
+		<tr class="ROW">
+			
+			<td>enter your phone number: </td>
+			<td colspan="2"><input type="phone" name="" placeholder="03343812789"></td>
+		</tr>
+		<tr class="ROW">
+			<td>
+				select your city
+			</td>
+			<td colspan="2">
+				<input type="radio" name="city" value="karachi">karachi<br>
+				<input type="radio" name="city" value="lahore">lahore<br>
+				<input type="radio" name="city" value="islamabad">islamabad<br>
+				<input type="radio" name="city" value="peshawar">peshawar<br>
+			</td>
+		</tr>
+		<tr class="ROW">
+			<td>
+				address
+			</td>
+			<td colspan="2">
+				<textarea cols="20">enter your address here</textarea>
+			</td>
+		</tr>
+		<tr class="ROW">
+			<td>
+				select your postal code
+			</td>
+			<td colspan="2">
+				<select>
+					<option>
+						74000
+					</option>
+					<option>
+						74001
+					</option>
+					<option>
+						74002
+					</option>
+					<option>
+						74003
+					</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr  class="ROW">
+			<td>enter CAPTCHA</td>
+			<td colspan="2">
+				<input type="text" name="CAPTCHA" id="CaptchaInput" size="15"><br>
+
+			</td>
+		</tr>
+		<tr class="ROW">
+			<td>
+				enter verification code
+			</td>
+			<td colspan="2">
+				<input type="code" name="">
+			</td>
+		</tr>
+		<tr class="ROW">
+			<td>
+					form submition Date
+			</td>
+			<td colspan="2">
+				<input type="Date" name="Date" placeholder="15/11/1997">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="submit" name="reset" value="reset">
+			</td>
+			<td>
+				<input class="btn" type="submit" name="" value="submit">
+			</td>
+		</tr>
+		<tr>
+			
+			<td colspan="3"><img src="robot.jpg"></td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
